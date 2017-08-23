@@ -13,8 +13,8 @@ The dataset is from the "Twenty Newsgroups Data Set" that is available at the UC
 
 Preprocessing 
 
-- Selects subset of the dataset - only the postings that correspond to original postings and not replies. 
-- Cleaning - Eliminates non-ascii characters, removes case-sensitivity, tokenization
+- Selects subset of the dataset by eliminating replies
+- Cleaning - Eliminates non-ascii characters, removes case-sensitivity, performs tokenization
 - Transforms into a Sparse Representation - (i) bag of words, and (ii) n-grams (n = 3, 5, 7).
 
 
@@ -22,13 +22,13 @@ Preprocessing
 Clustering
 
 Input: 
-- Vector-space representation of the objects
+- Vector-space representation
 - number of clusters
 - number of trials 
 - class labels 
 
 Output:
-- Confusion matrix of dimensions (# of clusters)*(# of classes) whose entries will be the number of objects of a particular class that belongs to a particular cluster. 
+- Confusion matrix of dimensions (#clusters)*(#classes)
 - entropy and purity
 
 ```
